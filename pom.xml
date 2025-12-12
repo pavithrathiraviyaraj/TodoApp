@@ -31,7 +31,6 @@
     
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -41,8 +40,6 @@
                     <target>11</target>
                 </configuration>
             </plugin>
-            
-            <!-- Maven Exec Plugin for running the application -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -51,8 +48,6 @@
                     <mainClass>com.todo.Main</mainClass>
                 </configuration>
             </plugin>
-            
-            <!-- Maven Shade Plugin for creating executable JAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
